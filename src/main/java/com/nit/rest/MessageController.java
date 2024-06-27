@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MessageController {
 	
-	@GetMapping("/msg/{name}")
-	public String sendMessage(@PathVariable String name) {
-		return "Hello Guys , Good Morning from "+name;
+	@GetMapping("/msg")
+	public String sendMessage() {
+		return "Hello Guys , Good Morning from ";
 	}
 
 }
